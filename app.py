@@ -12,6 +12,7 @@ def load_model():
     model = tf.keras.models.load_model('./models/plant_disease.h5')
     return model, class_indices
 
+
 st.write("""
          # Plant Disease Recognizer
          """
@@ -27,7 +28,7 @@ else:
     st.image(image, use_column_width=True)
 
     image = image.resize((224, 224))
-    image = np.expand_dims(np.asarray(image), axis = 0) / 255
+    image = np.expand_dims(np.asarray(image), axis=0) / 255
     model, class_indices = load_model()
     predictions = model(image)
 
