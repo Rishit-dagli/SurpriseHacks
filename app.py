@@ -11,3 +11,17 @@ def load_model():
         class_indices = json.load(json_file)
     model = tf.keras.models.load_model('./models/plant_disease.h5')
     return model, class_indices
+
+st.write("""
+         # Plant Disease Recognizer
+         """
+         )
+st.write("A minimalistic web app to identify disease in plant leaves from images")
+
+file = st.file_uploader("Please upload an image file", type=["jpg", "png"])
+
+if file is None:
+    st.text("You have not uploaded an image file")
+else:
+    image = Image.open(file)
+    st.image(image, use_column_width=True)
