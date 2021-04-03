@@ -25,3 +25,8 @@ if file is None:
 else:
     image = Image.open(file)
     st.image(image, use_column_width=True)
+
+    image = image.resize((224, 224))
+    image = np.expand_dims(np.asarray(image), axis = 0) / 255
+    model, class_indices = load_model()
+    predictions = model(image)
