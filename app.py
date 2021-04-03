@@ -30,3 +30,6 @@ else:
     image = np.expand_dims(np.asarray(image), axis = 0) / 255
     model, class_indices = load_model()
     predictions = model(image)
+
+    class_indices = {v: k for (k, v) in class_indices.items()}
+    st.write("It is a " + class_indices[np.argmax(predictions)])
