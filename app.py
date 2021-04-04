@@ -4,6 +4,15 @@ import tensorflow as tf
 from PIL import Image
 import json
 
+SEEDLING_EMOJI_URL = "https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/facebook/65/seedling_1f331" \
+                    ".png "
+page_title = "Plant Diseases"
+
+# Set page title and favicon.
+st.set_page_config(
+    page_title=page_title, page_icon=SEEDLING_EMOJI_URL,
+)
+
 
 @st.cache
 def load_model():
