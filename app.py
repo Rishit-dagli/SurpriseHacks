@@ -28,8 +28,8 @@ def load_model():
 
 
 # Display markdown content
-st.markdown("<br>", unsafe_allow_html=True)
-st.image(SEEDLING_EMOJI_URL, width=80)
+st.image(SEEDLING_EMOJI_URL,
+         width=80)
 
 """
 # Plant Disease Recognizer
