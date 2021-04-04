@@ -32,4 +32,12 @@ else:
     predictions = model(image)
 
     class_indices = {v: k for (k, v) in class_indices.items()}
-    st.subheader("It is a " + class_indices[np.argmax(predictions)])
+    predicted_label = str(class_indices[np.argmax(predictions)])
+    species, disease = predicted_label.split("__")
+
+    st.subheader(f"This leaf is of a {species} plant")
+    if disease == "healthy":
+        st.subheader("This plant is healthy ✔")
+    else:
+        disease_name = disease.replace("_", " ")
+        st.subheader(f"This plant is suffering from {disease_name}")
