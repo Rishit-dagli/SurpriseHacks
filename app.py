@@ -16,6 +16,7 @@ def load_model():
 st.title("Plant Disease Recognizer🌱")
 st.subheader("A minimalistic web app to identify disease in plant leaves from images")
 
+st.text("")
 file = st.file_uploader("Please upload an image file", type=["jpg", "png"])
 
 if file is None:
@@ -27,10 +28,7 @@ else:
     image = image.resize((224, 224))
     image = np.expand_dims(np.asarray(image), axis=0) / 255
 
-    model_load_state = st.text('Loading model...')
     model, class_indices = load_model()
-    model_load_state.text("Model loaded! (using st.cache)")
-
     predictions = model(image)
 
     class_indices = {v: k for (k, v) in class_indices.items()}
