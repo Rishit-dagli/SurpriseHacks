@@ -15,7 +15,22 @@ images divided into 38 categories by species and disease. Here I provide a subse
 
 This image shows an example of using the web-app:
 
-![](images/inference_example.PNG)
+![](images/inference_example.png)
+
+## Getting started
+
+To get up and running with this example, run the following commands, make sure you have Python installed. In case you want to just test this application you could also use the 
+deployed web app [![Launch Example](https://img.shields.io/badge/launch-example-informational?style=flat&logo=google-chrome)](https://plant-disease.tech)
+.
+
+```sh
+git clone https://github.com/Rishit-dagli/SurpriseHacks # or clone your own fork
+cd SurpriseHacks
+pip install -r requirements.txt # install dependencies
+streamlit run app.py
+```
+
+Your app should now be up and running 🚀.
 
 ## Citations
 
