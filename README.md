@@ -10,3 +10,16 @@
 This repository demonstrates the process of training a model to identify from a plant leave between 38 diseases and also build a minimalistic web app to identify disease in plant 
 leaves from images using the trained model. I use the [PlantVillage dataset](https://arxiv.org/abs/1511.08060) by Hughes et al. consists of about 88,000 healthy and unhealthy leaf 
 images divided into 38 categories by species and disease. Here I provide a subset of our experiments on working with this data.
+
+## Citations
+
+```bib
+@misc{hughes2016open,
+      title={An open access repository of images on plant health to enable the development of mobile disease diagnostics}, 
+      author={David. P. Hughes and Marcel Salathe},
+      year={2016},
+      eprint={1511.08060},
+      archivePrefix={arXiv},
+      primaryClass={cs.CY}
+}
+```
