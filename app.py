@@ -7,22 +7,27 @@ import json
 SEEDLING_EMOJI_URL = "https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/facebook/65/seedling_1f331" \
                      ".png "
 page_title = "Plant Diseases"
+class_indices_path = "./models/class_indices.json"
+model_path = "./models/plant_disease.h5"
 
 # Set page title and favicon.
 st.set_page_config(
-    page_title=page_title, page_icon=SEEDLING_EMOJI_URL,
+    page_title=page_title,
+    page_icon=SEEDLING_EMOJI_URL
 )
 
 
+# Cache model and class indices loading
 @st.cache
 def load_model():
-    with open('./models/class_indices.json') as json_file:
+    with open(class_indices_path) as json_file:
         class_indices = json.load(json_file)
-    model = tf.keras.models.load_model('./models/plant_disease.h5')
+
+    model = tf.keras.models.load_model(model_path)
     return model, class_indices
 
 
-# Display header.
+# Display markdown content
 st.markdown("<br>", unsafe_allow_html=True)
 st.image(SEEDLING_EMOJI_URL, width=80)
 
