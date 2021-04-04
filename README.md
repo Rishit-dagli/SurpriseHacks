@@ -7,4 +7,6 @@
 [![GitHub followers](https://img.shields.io/github/followers/Rishit-dagli?label=Follow&style=social)](https://github.com/Rishit-dagli)
 [![Twitter Follow](https://img.shields.io/twitter/follow/rishit_dagli?style=social)](https://twitter.com/intent/follow?screen_name=rishit_dagli)
 
-This is a minimalistic web app to identify disease in plant leaves from images.
+This repository demonstrates the process of training a model to identify from a plant leave between 38 diseases and also build a minimalistic web app to identify disease in plant 
+leaves from images using the trained model. I use the [PlantVillage dataset](https://arxiv.org/abs/1511.08060) by Hughes et al. consists of about 88,000 healthy and unhealthy leaf 
+images divided into 38 categories by species and disease. Here I provide a subset of our experiments on working with this data.
