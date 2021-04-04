@@ -11,6 +11,12 @@ This repository demonstrates the process of training a model to identify from a 
 leaves from images using the trained model. I use the [PlantVillage dataset](https://arxiv.org/abs/1511.08060) by Hughes et al. consists of about 88,000 healthy and unhealthy leaf 
 images divided into 38 categories by species and disease. Here I provide a subset of our experiments on working with this data.
 
+## Example
+
+This image shows an example of using the web-app:
+
+![](images/inference_example.PNG)
+
 ## Citations
 
 ```bib
