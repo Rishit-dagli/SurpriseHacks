@@ -52,7 +52,7 @@ Interested in seeing the code behind training the ML model and this web app? I h
 file = st.file_uploader("Please upload an image file", type=["jpg", "png"])
 
 if file is None:
-    st.text("Here are [some images](https://drive.google.com/drive/folders/13gjzw--osiXXZdIrhtyzB6WvCtHY36Wj?usp=sharing) you could try using!")
+    st.markdown("Here are [some images](https://drive.google.com/drive/folders/13gjzw--osiXXZdIrhtyzB6WvCtHY36Wj?usp=sharing) you could try using!")
 else:
     image = Image.open(file)
     st.image(image, use_column_width=True)
