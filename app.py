@@ -5,7 +5,7 @@ from PIL import Image
 import json
 
 SEEDLING_EMOJI_URL = "https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/facebook/65/seedling_1f331" \
-                    ".png "
+                     ".png "
 page_title = "Plant Diseases"
 
 # Set page title and favicon.
@@ -21,6 +21,7 @@ def load_model():
     model = tf.keras.models.load_model('./models/plant_disease.h5')
     return model, class_indices
 
+
 # Display header.
 st.markdown("<br>", unsafe_allow_html=True)
 st.image(SEEDLING_EMOJI_URL, width=80)
@@ -32,7 +33,12 @@ st.image(SEEDLING_EMOJI_URL, width=80)
 &nbsp[![GitHub followers](https://img.shields.io/github/followers/Rishit-dagli?label=Follow&style=social)](https://github.com/Rishit-dagli)
 &nbsp[![Twitter Follow](https://img.shields.io/twitter/follow/rishit_dagli?style=social)](https://twitter.com/intent/follow?screen_name=rishit_dagli)
 
-A minimalistic web app to identify disease in plant leaves from images.
+This is a minimalistic web app to identify disease in plant leaves from images. How to try this out on your own? All 
+you need to do is drag and drop or upload an image of a plant leave on this tab and then the Machine Learning model 
+should start doing it's work!
+
+Interested in seeing the code behind training the ML model and this web app? I have you covered, browse to this 
+[GitHub Repo](https://github.com/Rishit-dagli/SurpriseHacks). Consider giving it a ⭐ if you like it!
 
 ---
 """
