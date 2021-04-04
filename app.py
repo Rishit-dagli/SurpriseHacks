@@ -22,7 +22,7 @@ if file is None:
     st.text("You have not uploaded an image file")
 else:
     image = Image.open(file)
-    st.image(image, use_column_width=True)
+    st.image(image, use_column_width='auto')
 
     image = image.resize((224, 224))
     image = np.expand_dims(np.asarray(image), axis=0) / 255
