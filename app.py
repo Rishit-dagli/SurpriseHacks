@@ -14,10 +14,6 @@ def load_model():
 
 
 st.title("Plant Disease Recognizer")
-st.write("""
-         # Plant Disease Recognizer
-         """
-         )
 st.subheader("A minimalistic web app to identify disease in plant leaves from images")
 
 file = st.file_uploader("Please upload an image file", type=["jpg", "png"])
