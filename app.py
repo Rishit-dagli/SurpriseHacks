@@ -35,7 +35,8 @@ st.image(SEEDLING_EMOJI_URL, width=80)
 
 This is a minimalistic web app to identify disease in plant leaves from images. How to try this out on your own? All 
 you need to do is drag and drop or upload an image of a plant leave on this tab and then the Machine Learning model 
-should start doing it's work!
+should start doing it's work! Here are [some images](https://drive.google.com/drive/folders/13gjzw--osiXXZdIrhtyzB6WvCtHY36Wj?usp=sharing) 
+this model has never seen before and you can use this to test out this app.
 
 Interested in seeing the code behind training the ML model and this web app? I have you covered, browse to this 
 [GitHub Repo](https://github.com/Rishit-dagli/SurpriseHacks). Consider giving it a ⭐ if you like it!
