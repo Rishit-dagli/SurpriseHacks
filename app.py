@@ -34,4 +34,4 @@ else:
     predictions = model(image)
 
     class_indices = {v: k for (k, v) in class_indices.items()}
-    st.write("It is a " + class_indices[np.argmax(predictions)])
+    st.subheader("It is a " + class_indices[np.argmax(predictions)])
