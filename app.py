@@ -31,9 +31,9 @@ st.image(SEEDLING_EMOJI_URL, width=80)
 &nbsp[![GitHub Repo stars](https://img.shields.io/github/stars/Rishit-dagli/SurpriseHacks?style=social)](https://github.com/Rishit-dagli/SurpriseHacks/stargazers)
 &nbsp[![GitHub followers](https://img.shields.io/github/followers/Rishit-dagli?label=Follow&style=social)](https://github.com/Rishit-dagli)
 &nbsp[![Twitter Follow](https://img.shields.io/twitter/follow/rishit_dagli?style=social)](https://twitter.com/intent/follow?screen_name=rishit_dagli)
-"""
-st.markdown("<br>", unsafe_allow_html=True)
-"""A minimalistic web app to identify disease in plant leaves from images
+
+A minimalistic web app to identify disease in plant leaves from images.
+
 ---
 """
 
