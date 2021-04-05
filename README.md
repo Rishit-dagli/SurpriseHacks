@@ -17,6 +17,10 @@ This image shows an example of using the web-app:
 
 ![](images/inference_example.png)
 
+To know more and see a live demo of using the example, you could take a look at this demo video:
+
+[![Demo Video](https://img.youtube.com/vi/K8Qy5m_iZ7k/0.jpg)](https://www.youtube.com/watch?v=K8Qy5m_iZ7k)
+
 ## Getting started
 
 To get up and running with this example, run the following commands, make sure you have Python installed. In case you want to just test this application you could also use the 
